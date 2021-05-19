@@ -1,0 +1,29 @@
+{
+  "name": "@sloy/eslint-config-recommended",
+  "version": "0.0.1",
+  "description": "Recommended ESLint config for Azder",
+  "main": "index.js",
+  "repository": "https://github.com/sloy/eslint-config-recommended",
+  "author": "azder <azhder@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "scripts": {
+    "smp:once": "eslint -c index.js ./doc/samples",
+    "smp:wtch": "nodemon --exec npm run smp:once",
+    "jst:once": "jest",
+    "jst:wtch": "jest --watch",
+    "test": "npm run jst:once",
+    "start": "npm run jst:wtch"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.23"
+  },
+  "devDependencies": {
+    "@jest/globals": "^26.6.2",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3"
+  }
+}
