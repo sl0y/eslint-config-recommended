@@ -1,3 +1,6 @@
+'use strict'; // ALWAYS
+
+
 module.exports = Object.freeze([
     'no-console', // eslint-recommended: "error",
     'no-unreachable', // eslint-recommended: "error",
@@ -15,7 +18,6 @@ module.exports = Object.freeze([
     'no-undef', // eslint-recommended: "error",
     'no-undef-init', // eslint-recommended: "off",
     'no-undefined', // eslint-recommended: "off",
-    'no-unused-vars', // eslint-recommended: "error",
     'handle-callback-err', // eslint-recommended: "off",
     'no-new-require', // eslint-recommended: "off",
     'no-path-concat', // eslint-recommended: "off",

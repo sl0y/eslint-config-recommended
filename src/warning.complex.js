@@ -37,5 +37,6 @@ module.exports = Object.freeze({
         'named':      'never',
         'asyncArrow': 'always',
     },
+    'no-unused-vars':              {argsIgnorePattern: '^_'}, // eslint-recommended: "error",
 
 });

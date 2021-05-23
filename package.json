@@ -1,9 +1,9 @@
 {
   "name": "@sloy/eslint-config-recommended",
-  "version": "0.0.1",
-  "description": "Recommended ESLint config for Azder",
+  "version": "0.0.4",
+  "description": "Recommended ESLint config",
   "main": "index.js",
-  "repository": "https://github.com/sloy/eslint-config-recommended",
+  "repository": "https://github.com/sl0y/eslint-config-recommended",
   "author": "azder <azhder@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -13,8 +13,12 @@
   "scripts": {
     "smp:once": "eslint -c index.js ./doc/samples",
     "smp:wtch": "nodemon --exec npm run smp:once",
-    "jst:once": "jest",
-    "jst:wtch": "jest --watch",
+    "jst:once": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "jst:wtch": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "esl:once": "eslint -c index.js --ignore-path .gitignore ./",
+    "esl:wtch": "nodemon --exec eslint -c index.js --ignore-path .gitignore ./",
+    "esl:ofix": "eslint -c index.js --ignore-path .gitignore --fix ./",
+    "esl:wfix": "nodemon --exec eslint -c index.js --ignore-path .gitignore --fix ./",
     "test": "npm run jst:once",
     "start": "npm run jst:wtch"
   },

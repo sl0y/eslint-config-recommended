@@ -1,9 +1,12 @@
 /* eslint-disable max-lines */
 /** @see http://eslint.org/docs/rules/ */
 
+
 'use strict'; // ALWAYS
 
+
 const {OFF, WRN, ERR} = require('./constants.js');
+
 
 const simplex = (
     (level, array) => Object.fromEntries(
@@ -59,11 +62,5 @@ module.exports = {
         ...complex(WRN, require('./warning.complex.js')),
         ...simplex(ERR, require('./error.simple.js')),
         ...complex(ERR, require('./error.complex.js')),
-        // ...require('./rules/react.rules.js'),
     },
-
-    settings: {
-        // react: require('./settings/react.settings.js'),
-    },
-
 };

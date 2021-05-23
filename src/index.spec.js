@@ -2,8 +2,9 @@
 
 
 const eslint = require('eslint');
-const {it, describe} = require('@jest/globals');
+const {it, describe, expect} = require('@jest/globals');
 const own = require('./index.js').rules;
+
 
 describe('rules', () => {
 
