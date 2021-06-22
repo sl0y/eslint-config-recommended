@@ -15,4 +15,6 @@ module.exports = ({
         'text-summary',
     ],
 
+    collectCoverageFrom: ['src/**/*.js'],
+
 });
