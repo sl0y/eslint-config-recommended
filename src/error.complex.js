@@ -15,7 +15,7 @@ module.exports = Object.freeze({
     'brace-style':                      ['1tbs', {allowSingleLine: true}], // eslint-recommended: "off",
     'func-style':                       ['expression', {allowArrowFunctions: true}], // eslint-recommended: "off",
     'key-spacing':                      {beforeColon: false, afterColon: true, mode: 'minimum'}, // eslint-recommended: "off",
-    'no-shadow':                        {builtinGlobals: true}, // eslint-recommended: "off",
+    'no-shadow':                        {builtinGlobals: true, allow: ['_', '$', '$$']}, // eslint-recommended: "off",
     'no-use-before-define':             {functions: true, classes: true}, // eslint-recommended: "off",
     'one-var':                          {initialized: 'never', uninitialized: 'always'}, // eslint-recommended: "off",
     'no-eval':                          {allowIndirect: true}, // eslint-recommended: "off",
