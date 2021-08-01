@@ -1,6 +1,6 @@
 {
   "name": "@sloy/eslint-config-recommended",
-  "version": "0.1.1+10",
+  "version": "0.1.1+11",
   "description": "Recommended ESLint config",
   "main": "index.js",
   "repository": "https://github.com/sl0y/eslint-config-recommended",
@@ -35,9 +35,8 @@
   "devDependencies": {
     "@jest/globals": "^26.6.2",
     "@me5on/dv": "0.0.0",
-    "eslint": "^7.23.0",
+    "eslint": "^7.31.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3"
-  },
-  "dependencies": {}
+  }
 }
