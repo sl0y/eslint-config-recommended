@@ -1,6 +1,6 @@
 {
   "name": "@sloy/eslint-config-recommended",
-  "version": "0.1.1+11",
+  "version": "0.1.1+12",
   "description": "Recommended ESLint config",
   "main": "index.js",
   "repository": "https://github.com/sl0y/eslint-config-recommended",
@@ -15,16 +15,17 @@
     "eslintconfig"
   ],
   "scripts": {
-    "jst:ocvr": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
-    "jst:wcvr": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --watch-all --coverage",
-    "smp:once": "eslint -c index.js ./doc/samples",
-    "smp:wtch": "nodemon --exec npm run smp:once",
-    "jst:once": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "jst:wtch": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "esl:once": "eslint -c index.js --ignore-path .gitignore ./",
     "esl:wtch": "nodemon --exec eslint -c index.js --ignore-path .gitignore ./",
     "esl:ofix": "eslint -c index.js --ignore-path .gitignore --fix ./",
     "esl:wfix": "nodemon --exec eslint -c index.js --ignore-path .gitignore --fix ./",
+    "jst:ocvr": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "jst:wcvr": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --watch-all --coverage",
+    "jst:once": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "jst:wtch": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "smp:once": "eslint -c index.js ./doc/samples",
+    "smp:wtch": "nodemon --exec npm run smp:once",
+    "srv:covr": "npx http-server ./coverage/lcov-report/ -c-1 -p 0 ",
     "prepare": "husky install",
     "test": "npm run jst:once",
     "start": "npm run jst:wtch"
@@ -36,6 +37,7 @@
     "@jest/globals": "^26.6.2",
     "@me5on/dv": "0.0.0",
     "eslint": "^7.31.0",
+    "http-server": "^13.0.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3"
   }
