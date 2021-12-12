@@ -1,6 +1,6 @@
 {
   "name": "@sloy/eslint-config-recommended",
-  "version": "0.1.1+12",
+  "version": "0.1.1+13",
   "description": "Recommended ESLint config",
   "main": "index.js",
   "repository": "https://github.com/sl0y/eslint-config-recommended",
